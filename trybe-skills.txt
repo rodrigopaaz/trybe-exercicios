@@ -1,0 +1,10 @@
+- Unix
+- Bash
+- Gi
+<<<<<<< .merge_file_OKf62s
+Inteligencia Emociona
+Html
+=======
+Redux
+REACT
+>>>>>>> .merge_file_brQqor
