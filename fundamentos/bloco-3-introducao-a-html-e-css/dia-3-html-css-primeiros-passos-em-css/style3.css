@@ -1,0 +1,9 @@
+h1, p {
+    text-align: center;
+}
+
+p ul li:hover {
+
+color: cadetblue;
+
+}
