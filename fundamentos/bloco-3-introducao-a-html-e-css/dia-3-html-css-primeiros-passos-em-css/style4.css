@@ -2,7 +2,14 @@
     border-style: solid;
     border-color: black;
     border-width: 5px;
+    
 }
+
+.div-border:nth-child(odd){
+
+    font-style: italic;
+}
+
 
 .laranja {
     background-color: orange;
@@ -15,6 +22,7 @@
 
 .vermelha {
     background-color: red;
+    height: 80px;
 }
 
 .azul {
