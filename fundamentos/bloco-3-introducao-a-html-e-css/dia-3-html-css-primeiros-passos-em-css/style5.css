@@ -25,5 +25,13 @@ h1 em,h2 em
     border-color: black;
     border-width: 1px;
 }
+ul li:nth-child(-n+3),{
+    color: blue;
+}
+
+.rosa {
+    color: pink;
+}
+
 
 
