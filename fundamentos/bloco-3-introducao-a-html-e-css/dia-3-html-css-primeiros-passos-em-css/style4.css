@@ -1,0 +1,29 @@
+.div-border:hover {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.laranja {
+    background-color: orange;
+
+}
+
+.roxo {
+    background-color: blueviolet;
+}
+
+.vermelha {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
