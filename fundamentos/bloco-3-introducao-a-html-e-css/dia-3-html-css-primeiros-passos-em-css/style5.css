@@ -1,0 +1,6 @@
+li {
+    color:yellow;
+}
+li:nth-child(odd) {
+    text-transform: uppercase;
+}
