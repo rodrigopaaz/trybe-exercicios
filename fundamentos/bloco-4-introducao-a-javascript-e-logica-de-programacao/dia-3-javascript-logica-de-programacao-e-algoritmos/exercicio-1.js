@@ -21,26 +21,41 @@ console.log(reverseWord);
 
 //exercicio-3
 
+/*let array = ['java', 'javascript', 'python', 'html', 'css'];
 let counter = "";
-let counter2= 0;
-let result = 0;
+let maiorArray= 0;
+let menorArray= 0;
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
 
-    for (let index=5; index >= 5; index-=1) {
+    for (let index=4; index>=0; index-=1) {
     counter = array[index]; 
-    console.log(counter)
+    if(counter.length>maiorArray){
+    maiorArray= counter.length}
+    
+    menorArray = maiorArray;
+     
+     for (let index=4; index>=0; index-=1){
+        counter = array[index]; 
+        if(counter.length < menorArray){
+            menorArray = counter.length}
+        } 
+     } 
+     console.log('A array com o maior número de Strings tem --> ',maiorArray);
+     console.log('A array com o menor número de Strings tem --> ',menorArray);
+   */
+
+     //exercicio-4
+
+     let primeNumbers = [];
+     for(let index = 2; index<=50; index += 1)
+     { let counter = 0;
+      for (let index2 = 2; index2<=50; index2+=1)
+      {
+        if (index % index2 === 0) {counter +=1}
+      }
+      if (counter < 2) {
+        primeNumbers.push(index)
+      }
     }
-    /*counter2 = counter.lenght;
-        if (result < counter2) {
-              result = counter2  
-        } else {result = result}
-}
-        console.log (counter);
-
-
-/*3- Considere o array de strings abaixo:
-Copiar
-let array = ['java', 'javascript', 'python', 'html', 'css'];
-Escreva dois algoritmos: um que retorne a maior palavra deste array e outro que retorne a menor. Considere o número de caracteres de cada palavra.
-*/
+    console.log(primeNumbers);
+        
