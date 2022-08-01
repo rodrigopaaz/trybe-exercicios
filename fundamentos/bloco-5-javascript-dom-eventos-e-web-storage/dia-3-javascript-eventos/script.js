@@ -23,13 +23,13 @@ function createDaysOfTheWeek() {
   for (let index of decemberDaysList){
   if (index >= 24 && index <=25 || index === 31){
   let weekDay = document.createElement('li')
-  weekDay.className = 'days holiday'
+  weekDay.className = 'day holiday'
   daysWeek.appendChild(weekDay)
   weekDay.innerText = index
   }
   else if (index === 4 || index === 11 || index === 18 || index === 25 ){
     let weekDay = document.createElement('li')
-    weekDay.className = 'days friday'
+    weekDay.className = 'day friday'
     daysWeek.appendChild(weekDay)
     weekDay.innerText = index
     }  
@@ -39,4 +39,20 @@ function createDaysOfTheWeek() {
   daysWeek.appendChild(weekDay)
   weekDay.innerText = index
   }
-}
+    
+    let divsButton = document.querySelector('.buttons-container');
+    let buttonList = document.createElement('button');
+    buttonList.ID = 'btn-holiday';
+    divsButton.appendChild(buttonList);
+    
+    let diaFeriado = document.querySelector('.holiday')
+    let changeColor = diaFeriado.style.color = 'blue'
+
+  }      
+      
+    /*   buttonList.addEventListener('click', holidayColors); */
+
+    
+ 
+
+
