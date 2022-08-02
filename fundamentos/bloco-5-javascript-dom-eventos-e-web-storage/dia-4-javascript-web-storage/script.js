@@ -1,10 +1,15 @@
 let matriz = document.getElementsByTagName('h1')[0].parentElement
-
-botaoCor = document.getElementById('changeBackground')
-botaoCor.addEventListener('click', function (){
-    if(matriz.style.background == 'purple'){matriz.style.background ='red'} 
-    else {matriz.style.background ='purple'} 
+//Parte 1
+changeColor = document.getElementById('corDeFundo')
+changeColor.addEventListener('submit', function (){
+    const colorInput = document.querySelector('#changeBackground')
+    sessionStorage.setItem('CorFundo', colorInput.value)
+    //sessionStorage.setItem('background',JSON.stringify(changeBackground)) */
 })
+matriz.style.background = sessionStorage.CorFundo
+
+
+
 
 botaoTextColor = document.getElementById('changeTextColor')
 botaoTextColor.addEventListener('click', function (){
