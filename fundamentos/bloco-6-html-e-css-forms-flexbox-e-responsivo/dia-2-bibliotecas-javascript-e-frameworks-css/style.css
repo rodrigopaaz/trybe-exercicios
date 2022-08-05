@@ -1,0 +1,27 @@
+#textArea {
+    resize: none;
+    width: 400px;
+    height: 200px;
+}
+
+#formTrip {
+    text-align: center;
+    display: inline-block;
+
+}
+
+#nameEmail {
+    width: 250px;
+}
+
+#options {
+    text-align: left;
+
+}
+#answer {
+    text-align: left;
+}
+
+fieldset {
+    width: 00px;
+}
