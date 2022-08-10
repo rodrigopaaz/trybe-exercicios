@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header><h1>Concorra a uma Viajem!</h1></header>
-    <main><form action="" id="formTrip" method="get" class="form-control"><fieldset>
-        <section class="form-control" id="nameEmail"><label for="inputName" >Name:<input type="text" id="inputName"></label>
-        <label for="inputEmail">Email:<input type="email" id="inputEmail"></label></section class="form-control">
-    <section class="form-control" id="options"> <label for="optionOne">Opção 1:<input type="radio" id="optionOne" name="opcao"></label>
-        <label for="optionTwo">Opção 2:<input type="radio" id="optionTwo" name="opcao"></label>
-        <label for="optionTree">Opção 3:<input type="radio" id="optionTree" name="opcao"></label>
-        <label for="optionFour">Opção 4:<input type="radio" id="optionFour" name="opcao"></label></section>
-    <section class="form-control" id="answer"><h3>Espaço para digitar a resposta:</h3>
-        <textarea id="textArea" maxlength="600"></textarea>
-        <label for="checkOne">checkOne:<input type="checkbox" id="checkOne" name="opcao1"></label>
-        <label for="checkTwo">checkTwo<input type="checkbox" id="checkTwo" name="opcao1"></label></fieldset></section>
-    <section class="form-control" ><button class="btn-warning" type="submit">Enviar:</button>
-            <button type="reset">Reset::</button></section>
+    <header><h1 class="display-1 text-center">Concorra a uma Viajem!</h1></header>
+    <form action="" id="formTrip" method="get"><fieldset>
+        <div class="form-check" id="nameEmail"><label for="inputName">Name:</label><input class="form-control" type="text" id="inputName"></div><br>
+</div>
+    <div class="form-check" id="options"> <label for="optionOne">Opção 1:<input type="radio" id="optionOne" name="opcao"></label>
+        <label class=""form-label for="optionTwo">Opção 2:<input type="radio" id="optionTwo" name="opcao"></label>
+        <label class=""form-label for="optionTree">Opção 3:<input type="radio" id="optionTree" name="opcao"></label>
+        <label class=""form-label for="optionFour">Opção 4:<input type="radio" id="optionFour" name="opcao"></label></div>
+    <div class="form-check" id="answer"><h3>Espaço para digitar a resposta:</h3>
+        <textarea style="resize:none" class="form-control" id="textArea" maxlength="600"></textarea>
+        <label class=""form-label for="checkOne">checkOne:<input class="form-check-input" type="checkbox" id="checkOne" name="opcao1"></label>
+        <label class=""form-label for="checkTwo">checkTwo<input class="form-check-input" type="checkbox" id="checkTwo" name="opcao1"></label></fieldset></div>
+    <div class="form-check" >
+        <button class="btn btn-primary d-grid gap-2 col-6 mx-auto" type="submit">Enviar:</button>
+        <button class="btn btn-danger d-grid gap-2 col-6 mx-auto" type="reset">Reset::</button></div>
         
-    </form></main>
+    </form>
 </body>
 </html>
