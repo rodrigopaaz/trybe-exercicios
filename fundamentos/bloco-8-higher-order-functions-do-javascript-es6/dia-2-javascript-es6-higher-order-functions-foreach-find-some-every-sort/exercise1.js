@@ -81,17 +81,7 @@ function smallerName(array) {
 
 // requisito 3
 
-const expectedResult = {
-    id: 1,
-    name: 'As Crônicas de Gelo e Fogo',
-    genre: 'Fantasia',
-    author: {
-      name: 'George R. R. Martin',
-      birthYear: 1948,
-    },
-    releaseYear: 1991,
-  };
-  
+ 
   function getNamedBook(array) {
     let nameBook = array[0];
     // escreva aqui o seu código
@@ -102,5 +92,39 @@ const expectedResult = {
     return nameBook;
   }
    console.log(getNamedBook(books));
-    
+
+// requisito 4   
+
+  function booksOrderedByReleaseYearDesc(array) {
+    array.sort((a, b) => a.releaseYear - b.releaseYear);
+  }
+
+booksOrderedByReleaseYearDesc(books);
+console.log(books);
+
+// requisito 5
+
+const expectedResult = false;
+
+function everyoneWasBornOnSecXX(array) {
+    return array.every((element) => element.author.birthYear >= 1900 && element.author.birthYear < 2000);
+  }
+
+  console.log(everyoneWasBornOnSecXX(books));
+
+  // requisito 6
+function someBookWasReleaseOnThe80s(arr) {
+    // escreva seu código aqui
+    return arr.some((element) => element.releaseYear >= 1980 && element.releaseYear < 1990);
+  }
+  //console.log(someBookWasReleaseOnThe80s(books));
+  
+  // requsito 7
+  function authorUnique(arr) {
+    // escreva seu código aqui
+    return arr.every((book) => !arr.some((element) => (element.author.birthYear === book.author.birthYear) && (element.author.name !== book.author.name)));
+  }
+  console.log(authorUnique(books));
+
+
   
