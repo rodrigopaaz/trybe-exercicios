@@ -60,14 +60,22 @@ const books = [
       releaseYear: 1928,
     },
   ];
-  
-  const birthDate = books.find((nascimento) => nascimento.author.birthYear === 1947);
 
-  function smallerName() {
-    let nameBook
-    nameBook 
+  const birthDate = books.find((nascimento) => nascimento.author.birthYear === 1947);
+  console.log(birthDate);
+
+
+// requisito 2
+function smallerName(array) {
+    let nameBook = array[0].name;
+    // escreva aqui o seu código
+    array.forEach(element => {
+      if (element.name.length<= nameBook.length) {
+        nameBook = element.name;
+      }
+    });
+
     return nameBook;
   }
+  console.log(smallerName(books));  
 
-  console.log(books);
-  console.log(birthDate);
