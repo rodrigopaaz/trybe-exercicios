@@ -142,26 +142,22 @@ const handleError = (errorReason) =>
   console.log(`Error getting temperature: ${errorReason}`);
 
 // definição da função sendMarsTemperature...
-const didOperationSucceed = Math.random() >= 0.5;
-
-const sendMarsTemperature = (parametro1, parametro2) => {
-  setTimeout(() => {
-  if(didOperationSucceed){
-    return parametro1(temperatureInFahrenheit(getMarsTemperature()))
-  }
-  return parametro2(handleError('Robot is Busy'))
-},messageDelay())
-}
-
-
-
-// imprime "It is currently 47ºF at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
-sendMarsTemperature(toFahrenheit(getMarsTemperature), handleError);
+const sendMarsTemperature = (onSuccess, onError) => {
+const currentTemperature = getMarsTemperature();
+const messageSuccess = Math.random() <= 0.6;
+setTimeout(() => {
+  if(messageSuccess) onSuccess(currentTemperature)
+  else onError('Robot is very busy');
+}, messageDelay());
+};
+ */
+/* // imprime "It is currently 47ºF at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
+sendMarsTemperature(temperatureInFahrenheit, handleError);
 
 // imprime "Hi there! Curiosity here. Right now is 53ºC at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
-sendMarsTemperature(greet, handleError); */
-
-const pokemons = [
+sendMarsTemperature(greet, handleError);
+ */
+/* const pokemons = [
   {
     name: 'Bulbasaur',
     type: 'Grama',
@@ -191,12 +187,28 @@ function getPokemonDetails(selectedPokemon, callback) {
 
     const messageFromProfOak = `Olá, seu pokémon é o ${name}, o tipo dele é ${type} e a habilidade principal dele é ${ability}`;
 
-    callback(null, messageFromProfOak);
+    return callback(null, messageFromProfOak);
   }, 2000);
 }
 
 const handlePokemonSearch = (error, message) => {
-  return message
+  if (error) {
+  console.log(error);
+  } else {
+  console.log(message);
+  }
 };
 
-getPokemonDetails('Squirtle', handlePokemonSearch);
+getPokemonDetails('Squirtle', handlePokemonSearch); */
+
+beforeEach(() => console.log('1 - beforeEach'));
+afterEach(() => console.log('1 - afterEach'));
+
+test('', () => console.log('1 - test'));
+
+describe('Scoped / Nested block', () => {
+  beforeEach(() => console.log('2 - beforeEach'));
+  afterEach(() => console.log('2 - afterEach'));
+
+  test('', () => console.log('2 - test'));
+});
