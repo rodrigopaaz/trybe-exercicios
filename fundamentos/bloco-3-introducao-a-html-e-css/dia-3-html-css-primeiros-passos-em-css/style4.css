@@ -1,0 +1,37 @@
+.div-border:hover {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    
+}
+
+.div-border:nth-child(odd){
+
+    font-style: italic;
+}
+
+
+.laranja {
+    background-color: orange;
+
+}
+
+.roxo {
+    background-color: blueviolet;
+}
+
+.vermelha {
+    background-color: red;
+    height: 80px;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
