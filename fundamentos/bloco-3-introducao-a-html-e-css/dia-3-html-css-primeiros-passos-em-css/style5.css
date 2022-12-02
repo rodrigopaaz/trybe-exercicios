@@ -1,0 +1,44 @@
+li {
+    color:yellow;
+    font-size: 20px;
+}
+li:nth-child(odd) {
+    text-transform: uppercase;
+    
+}
+li em{
+
+    font-weight: bold;
+
+}
+
+li:nth-child(even) {
+    color: green;
+}
+h1,h2 { color: red;
+}
+
+h1 em,h2 em
+{
+    font-size: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+ul li:nth-child(-n+3),{
+    color: blue;
+}
+
+.rosa {
+    color: pink;
+}
+
+.aliados:hover {
+
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+

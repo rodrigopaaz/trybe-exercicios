@@ -1,0 +1,17 @@
+ul li {
+    list-style: none;
+}
+
+h1, p {
+    text-align: center;
+}
+
+li:hover {
+
+    color: aquamarine;
+}
+
+body>:active {
+font-family: sans-serif;
+
+}
